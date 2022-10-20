@@ -4,13 +4,13 @@ pipeline {
     stage('version') {
       steps {
         echo 'version step'
-        sh 'python3 --version'
+        bat 'python3 --version'
       }
     }
     stage('hello') {
       steps {
         echo 'executing step'
-        sh 'python3 my_test.py'
+        bat 'python3 my_test.py'
       }
     }
   }
